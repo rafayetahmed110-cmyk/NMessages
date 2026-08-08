@@ -1,0 +1,6 @@
+{
+  "name": "NMessages - Default Android SMS App",
+  "description": "Production-ready Android SMS & Messaging application built with Flutter, Material Design 3, and Kotlin Platform Channels.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
