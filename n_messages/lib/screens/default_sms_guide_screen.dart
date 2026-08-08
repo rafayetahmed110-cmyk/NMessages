@@ -97,7 +97,7 @@ class _DefaultSmsGuideScreenState extends State<DefaultSmsGuideScreen> {
           Text(
             loc.translate('default_sms_guide_subtitle'),
             textAlign: TextAlign.center,
-            style: const TextStyle(color: Colors.slate400, fontSize: 13),
+            style: const TextStyle(color: Color(0xFF94A3B8), fontSize: 13),
           ),
           const SizedBox(height: 24),
 
@@ -140,7 +140,7 @@ class _DefaultSmsGuideScreenState extends State<DefaultSmsGuideScreen> {
                               ? loc.translate('already_default_status')
                               : loc.translate('default_sms_desc'),
                           style: TextStyle(
-                            color: _isDefaultSms ? Colors.white70 : Colors.slate300,
+                            color: _isDefaultSms ? Colors.white70 : const Color(0xFFCBD5E1),
                             fontSize: 12,
                           ),
                         ),
@@ -254,7 +254,7 @@ class _DefaultSmsGuideScreenState extends State<DefaultSmsGuideScreen> {
       padding: const EdgeInsets.only(left: 4, bottom: 8),
       child: Text(
         title.toUpperCase(),
-        style: const TextStyle(color: Colors.slate400, fontSize: 11, fontWeight: FontWeight.bold, letterSpacing: 1),
+        style: const TextStyle(color: Color(0xFF94A3B8), fontSize: 11, fontWeight: FontWeight.bold, letterSpacing: 1),
       ),
     );
   }
@@ -275,10 +275,10 @@ class _DefaultSmsGuideScreenState extends State<DefaultSmsGuideScreen> {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Icon(Icons.arrow_right_rounded, color: Colors.emeraldAccent, size: 20),
+        const Icon(Icons.arrow_right_rounded, color: Color(0xFF34D399), size: 20),
         const SizedBox(width: 8),
         Expanded(
-          child: Text(text, style: const TextStyle(color: Colors.slate200, fontSize: 13, height: 1.4)),
+          child: Text(text, style: const TextStyle(color: Color(0xFFE2E8F0), fontSize: 13, height: 1.4)),
         ),
       ],
     );
@@ -295,10 +295,10 @@ class _DefaultSmsGuideScreenState extends State<DefaultSmsGuideScreen> {
       ),
       child: Row(
         children: [
-          const Icon(Icons.check, color: Colors.emeraldAccent, size: 14),
+          const Icon(Icons.check, color: Color(0xFF34D399), size: 14),
           const SizedBox(width: 8),
           Expanded(
-            child: Text(text, style: const TextStyle(color: Colors.slate300, fontSize: 11, fontFamily: 'monospace')),
+            child: Text(text, style: const TextStyle(color: Color(0xFFCBD5E1), fontSize: 11, fontFamily: 'monospace')),
           ),
         ],
       ),

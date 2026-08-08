@@ -108,7 +108,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Row(
                               children: [
                                 IconButton(
-                                  icon: Icon(_isSearching ? Icons.close : Icons.search, color: Colors.slate300),
+                                  icon: Icon(_isSearching ? Icons.close : Icons.search, color: const Color(0xFFCBD5E1)),
                                   onPressed: () {
                                     setState(() {
                                       _isSearching = !_isSearching;
@@ -149,7 +149,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       value: 'settings',
                                       child: Row(
                                         children: [
-                                          const Icon(Icons.settings, size: 20, color: Colors.slate400),
+                                          const Icon(Icons.settings, size: 20, color: Color(0xFF94A3B8)),
                                           const SizedBox(width: 12),
                                           Text(loc.translate('settings'), style: const TextStyle(color: Colors.white)),
                                         ],
@@ -272,11 +272,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Icon(Icons.forum_outlined, size: 56, color: Colors.slate600),
+                                    Icon(Icons.forum_outlined, size: 56, color: const Color(0xFF475569)),
                                     const SizedBox(height: 12),
                                     Text(
                                       loc.translate('no_messages'),
-                                      style: const TextStyle(color: Colors.slate400, fontSize: 15),
+                                      style: const TextStyle(color: Color(0xFF94A3B8), fontSize: 15),
                                     ),
                                   ],
                                 ),
@@ -321,7 +321,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: (idx) => setState(() => _currentBottomNav = idx),
         backgroundColor: const Color(0xFF0F172A),
         selectedItemColor: const Color(0xFF818CF8),
-        unselectedItemColor: Colors.slate500,
+        unselectedItemColor: const Color(0xFF64748B),
         items: [
           BottomNavigationBarItem(
             icon: const Icon(Icons.chat_bubble_rounded),
@@ -347,7 +347,7 @@ class _HomeScreenState extends State<HomeScreen> {
       selectedColor: const Color(0xFF6366F1),
       backgroundColor: const Color(0xFF1E293B),
       labelStyle: TextStyle(
-        color: isSelected ? Colors.white : Colors.slate300,
+        color: isSelected ? Colors.white : const Color(0xFFCBD5E1),
         fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
         fontSize: 12,
       ),
@@ -453,7 +453,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Text(
                 timeFormatted,
                 style: TextStyle(
-                  color: conv.unreadCount > 0 ? const Color(0xFF818CF8) : Colors.slate400,
+                  color: conv.unreadCount > 0 ? const Color(0xFF818CF8) : const Color(0xFF94A3B8),
                   fontSize: 11,
                 ),
               ),
@@ -469,7 +469,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      color: conv.unreadCount > 0 ? Colors.white : Colors.slate400,
+                      color: conv.unreadCount > 0 ? Colors.white : const Color(0xFF94A3B8),
                       fontWeight: conv.unreadCount > 0 ? FontWeight.w500 : FontWeight.normal,
                       fontSize: 13,
                     ),

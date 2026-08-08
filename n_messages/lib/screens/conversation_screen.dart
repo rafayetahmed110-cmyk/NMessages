@@ -69,12 +69,12 @@ class _ConversationScreenState extends State<ConversationScreen> {
           title: const Text('Block Number?', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
           content: Text(
             'Are you sure you want to block ${widget.contactName} (${widget.address})? Incoming messages from this sender will be suppressed.',
-            style: const TextStyle(color: Colors.slate300, fontSize: 13),
+            style: const TextStyle(color: Color(0xFFCBD5E1), fontSize: 13),
           ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(ctx, false),
-              child: const Text('Cancel', style: TextStyle(color: Colors.slate400)),
+              child: const Text('Cancel', style: TextStyle(color: Color(0xFF94A3B8))),
             ),
             ElevatedButton(
               onPressed: () => Navigator.pop(ctx, true),
@@ -188,7 +188,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
                   ),
                   Text(
                     widget.address,
-                    style: const TextStyle(fontSize: 11, color: Colors.slate400),
+                    style: const TextStyle(fontSize: 11, color: Color(0xFF94A3B8)),
                   ),
                 ],
               ),
@@ -218,11 +218,11 @@ class _ConversationScreenState extends State<ConversationScreen> {
                 value: 'block',
                 child: Row(
                   children: [
-                    Icon(_isBlocked ? Icons.check_circle : Icons.block, color: _isBlocked ? Colors.emeraldAccent : Colors.redAccent, size: 18),
+                    Icon(_isBlocked ? Icons.check_circle : Icons.block, color: _isBlocked ? const Color(0xFF34D399) : Colors.redAccent, size: 18),
                     const SizedBox(width: 8),
                     Text(
                       _isBlocked ? loc.translate('unblock') : loc.translate('block_number'),
-                      style: TextStyle(color: _isBlocked ? Colors.emeraldAccent : Colors.redAccent),
+                      style: TextStyle(color: _isBlocked ? const Color(0xFF34D399) : Colors.redAccent),
                     ),
                   ],
                 ),
@@ -290,7 +290,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
               child: Row(
                 children: [
                   IconButton(
-                    icon: const Icon(Icons.add_circle_outline, color: Colors.slate400),
+                    icon: const Icon(Icons.add_circle_outline, color: Color(0xFF94A3B8)),
                     onPressed: () {},
                   ),
                   Expanded(
@@ -301,7 +301,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
                       minLines: 1,
                       decoration: InputDecoration(
                         hintText: loc.translate('type_message'),
-                        hintStyle: const TextStyle(color: Colors.slate400),
+                        hintStyle: const TextStyle(color: Color(0xFF94A3B8)),
                         border: InputBorder.none,
                       ),
                     ),
@@ -364,7 +364,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
                 Text(
                   timeStr,
                   style: TextStyle(
-                    color: isMe ? Colors.indigo.shade100 : Colors.slate400,
+                    color: isMe ? Colors.indigo.shade100 : const Color(0xFF94A3B8),
                     fontSize: 10,
                   ),
                 ),

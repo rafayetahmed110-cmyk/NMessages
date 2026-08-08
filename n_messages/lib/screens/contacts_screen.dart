@@ -69,7 +69,7 @@ class _ContactsScreenState extends State<ContactsScreen> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: loc.translate('search_placeholder'),
-                    hintStyle: const TextStyle(color: Colors.slate400),
+                    hintStyle: const TextStyle(color: Color(0xFF94A3B8)),
                     prefixIcon: const Icon(Icons.search, color: Colors.indigoAccent),
                     filled: true,
                     fillColor: const Color(0xFF1E293B),
@@ -91,7 +91,7 @@ class _ContactsScreenState extends State<ContactsScreen> {
                     ? Center(
                         child: Text(
                           loc.translate('no_contacts'),
-                          style: const TextStyle(color: Colors.slate400),
+                          style: const TextStyle(color: Color(0xFF94A3B8)),
                         ),
                       )
                     : ListView.builder(
@@ -109,7 +109,7 @@ class _ContactsScreenState extends State<ContactsScreen> {
                                 child: Text(c.initials, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                               ),
                               title: Text(c.name, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                              subtitle: Text(c.phoneNumber, style: const TextStyle(color: Colors.slate400)),
+                              subtitle: Text(c.phoneNumber, style: const TextStyle(color: Color(0xFF94A3B8))),
                               trailing: IconButton(
                                 icon: const Icon(Icons.message_rounded, color: Colors.indigoAccent),
                                 onPressed: () {

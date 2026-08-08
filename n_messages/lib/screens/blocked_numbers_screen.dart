@@ -69,7 +69,7 @@ class _BlockedNumbersScreenState extends State<BlockedNumbersScreen> {
                     keyboardType: TextInputType.phone,
                     decoration: InputDecoration(
                       hintText: 'Enter phone number to block...',
-                      hintStyle: const TextStyle(color: Colors.slate400),
+                      hintStyle: const TextStyle(color: Color(0xFF94A3B8)),
                       filled: true,
                       fillColor: const Color(0xFF1E293B),
                       border: OutlineInputBorder(
@@ -96,7 +96,7 @@ class _BlockedNumbersScreenState extends State<BlockedNumbersScreen> {
             child: _isLoading
                 ? const Center(child: CircularProgressIndicator(color: Colors.indigoAccent))
                 : _blockedNumbers.isEmpty
-                    ? const Center(child: Text('No blocked numbers', style: TextStyle(color: Colors.slate400)))
+                    ? const Center(child: Text('No blocked numbers', style: TextStyle(color: Color(0xFF94A3B8))))
                     : ListView.builder(
                         itemCount: _blockedNumbers.length,
                         itemBuilder: (context, index) {

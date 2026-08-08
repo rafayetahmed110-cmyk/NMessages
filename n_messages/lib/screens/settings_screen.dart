@@ -124,7 +124,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             leading: const Icon(Icons.block, color: Colors.redAccent),
             title: Text(loc.translate('blocked_numbers'), style: const TextStyle(color: Colors.white)),
-            trailing: const Icon(Icons.chevron_right, color: Colors.slate400),
+            trailing: const Icon(Icons.chevron_right, color: Color(0xFF94A3B8)),
             onTap: () {
               Navigator.push(
                 context,
@@ -146,7 +146,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 children: [
                   Text('NMessages v1.0.0', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16)),
                   SizedBox(height: 4),
-                  Text('Modern Default Android SMS & Messaging Client built with Flutter, Material 3, and Kotlin Platform Channels.', style: TextStyle(color: Colors.slate400, fontSize: 12)),
+                  Text('Modern Default Android SMS & Messaging Client built with Flutter, Material 3, and Kotlin Platform Channels.', style: TextStyle(color: Color(0xFF94A3B8), fontSize: 12)),
                 ],
               ),
             ),
@@ -161,7 +161,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       padding: const EdgeInsets.only(left: 4, bottom: 8),
       child: Text(
         title.toUpperCase(),
-        style: const TextStyle(color: Colors.slate400, fontSize: 11, fontWeight: FontWeight.bold, letterSpacing: 1),
+        style: const TextStyle(color: Color(0xFF94A3B8), fontSize: 11, fontWeight: FontWeight.bold, letterSpacing: 1),
       ),
     );
   }

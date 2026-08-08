@@ -81,7 +81,7 @@ class _NewMessageScreenState extends State<NewMessageScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Row(
               children: [
-                Text(loc.translate('recipient'), style: const TextStyle(color: Colors.slate400, fontWeight: FontWeight.bold)),
+                Text(loc.translate('recipient'), style: const TextStyle(color: Color(0xFF94A3B8), fontWeight: FontWeight.bold)),
                 const SizedBox(width: 12),
                 Expanded(
                   child: TextField(
@@ -90,7 +90,7 @@ class _NewMessageScreenState extends State<NewMessageScreen> {
                     style: const TextStyle(color: Colors.white),
                     decoration: const InputDecoration(
                       hintText: 'Type a name or phone number...',
-                      hintStyle: TextStyle(color: Colors.slate500),
+                      hintStyle: TextStyle(color: Color(0xFF64748B)),
                       border: InputBorder.none,
                     ),
                   ),
@@ -119,7 +119,7 @@ class _NewMessageScreenState extends State<NewMessageScreen> {
                           child: Text(c.initials, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                         ),
                         title: Text(c.name, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                        subtitle: Text(c.phoneNumber, style: const TextStyle(color: Colors.slate400)),
+                        subtitle: Text(c.phoneNumber, style: const TextStyle(color: Color(0xFF94A3B8))),
                         onTap: () => _startChatWith(c.name, c.phoneNumber),
                       );
                     },
